@@ -41,3 +41,6 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+SELECT STRFTIME('%Y',c23) as YEAR,  avg(c21) 
+FROM tbl2
+GROUP BY STRFTIME('%Y',c23);
